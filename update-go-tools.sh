@@ -1,21 +1,37 @@
 #!/usr/bin/bash
 
 # Project Discovery
-go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest
-go install github.com/projectdiscovery/katana/cmd/katana@latest
-go install github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
-go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
-go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest
-go install github.com/projectdiscovery/httpx/cmd/httpx@latest
+echo "[+] Update dnsx from Project Discovery"
+go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+echo "[+] Update katana from Project Discovery"
+go install -v github.com/projectdiscovery/katana/cmd/katana@latest
+echo "[+] Update naabu from Project Discovery"
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+echo "[+] Update nuclei from Project Discovery"
+go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+echo "[+] Update tlsx from Project Discovery"
+go install -v github.com/projectdiscovery/tlsx/cmd/tlsx@latest
+echo "[+] Update httpx from Project Discovery"
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+echo "[+] Update interactsh-server from Project Discovery"
+go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-server@latest
+echo "[+] Update interactsh-client from Project Discovery"
+go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
 
 # TomNomNom
-go install github.com/tomnomnom/anew@latest
-go install github.com/tomnomnom/gf@latest
-go install github.com/tomnomnom/waybackurls@latest
+echo "[+] Update anew from TomNomNom"
+go install -v github.com/tomnomnom/anew@latest
+echo "[+] Update gf from TomNomNom"
+go install -v github.com/tomnomnom/gf@latest
+echo "[+] Update waybackurls from TomNomNom"
+go install -v github.com/tomnomnom/waybackurls@latest
 
 # Hakluke
-go install github.com/hakluke/hakrawler@latest
+echo "[+] Update hakrawler from Hakluke"
+go install -v github.com/hakluke/hakrawler@latest
 
 # Other
-go install github.com/jaeles-project/jaeles@latest
-go install github.com/lc/gau/v2/cmd/gau@latest
+echo "[+] Update jaeles from Jaeles Project"
+go install -v github.com/jaeles-project/jaeles@latest
+echo "[+] Update gau from lc"
+go install -v github.com/lc/gau/v2/cmd/gau@latest
