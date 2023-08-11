@@ -17,6 +17,8 @@ echo "[+] Update interactsh-server from Project Discovery"
 go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-server@latest
 echo "[+] Update interactsh-client from Project Discovery"
 go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
+echo "[+] Update chaos-client from Project Discovery"
+go install -v github.com/projectdiscovery/chaos-client/cmd/chaos@latest
 
 # TomNomNom
 echo "[+] Update anew from TomNomNom"
